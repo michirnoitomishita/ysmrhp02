@@ -1,0 +1,574 @@
+body {
+    font-size: 16px;
+    text-align: center;
+    width: 960px;
+    font-family: serif;
+    max-width: 100%;
+
+}
+
+/*ーーーーーーーーーーー*/
+/*main*/
+/*ーーーーーーーーーーー*/
+.main {
+    margin: 0px 0px 750px 0px;
+}
+
+.main_text {
+    display: flex;
+}
+
+.main_text p {
+    text-align: center;
+    margin: 40px 0px 0px 0px;
+    font-weight: bold
+}
+
+.ul_li {
+    color: black;
+}
+
+ul {
+    overflow: hidden;
+    height: 35px;
+    background-color: lightgray;
+    margin: auto;
+
+}
+
+li {
+    color: ghostwhite;
+    list-style: none;
+    float: right;
+    margin: 5px 20px 0px 0px
+}
+
+
+
+.container {
+    position: relative;
+    width: 960px;
+    height: auto;
+    text-align: left;
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    animation: change-img-anim 20s infinite;
+}
+
+.image:nth-of-type(1) {
+    animation: change-img-anim-first 20s infinite;
+    animation-delay: 0s;
+}
+
+.image:nth-of-type(2) {
+    animation-delay: 7s;
+}
+
+.image:nth-of-type(3) {
+    animation-delay: 15s;
+}
+
+@keyframes change-img-anim-first {
+    0% {
+        opacity: １;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    36% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes change-img-anim {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    36% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/*ーーーーーーーーーーー*/
+/*news*/
+/*ーーーーーーーーーーー*/
+.scroll {
+    margin: auto;
+    width: 96%;
+    font-size: 140%;
+    line-height: 1.5em;
+    text-align: center;
+    border: 1px solid #666;
+    color: #000000;
+    background: #fff;
+    overflow: hidden;
+}
+
+.scroll span {
+    display: inline-block;
+    padding-left: 100%;
+    white-space: nowrap;
+    line-height: 1em;
+    animation: scrollAnime 3s linear infinite;
+}
+
+@keyframes scrollAnime {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(-100%)
+    }
+}
+
+.news {
+    text-align: center;
+}
+
+.news_text_02 p {
+    font-size: 16px;
+    letter-spacing: auto;
+    width: 500px;
+    text-align: left;
+    margin: 0px 280px;
+}
+
+h1 {
+    margin: 64px 0px 20px 0px;
+    font-size: 24px;
+}
+
+.news_text_02 {
+    width: fit-content;
+    margin: 30px 0 0 0;
+}
+
+.slider {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+
+.slider-item {
+    width: 300px;
+    float: left;
+}
+
+
+.slider-inner {
+    width: 300%;
+    animation: slider 10s infinite ease;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-300px);
+    }
+
+    66% {
+        transform: translateX(-600px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/*ーーーーーーーーーーー*/
+/*about*/
+/*ーーーーーーーーーーー*/
+h2 {
+    margin: 100px 0px 20px 0px;
+    font-size: 24px;
+}
+
+.about_image_01 {
+    display: flex;
+    margin: 60px 0px 100px 150px;
+}
+
+.about_image_01_text {
+    height: 50%;
+    writing-mode: vertical-rl;
+    text-align: justify;
+    margin: 20px 0px 0px 40px;
+}
+
+/*ーーーーーーーーーーー*/
+/*Movie*/
+/*ーーーーーーーーーーー*/
+
+.Movie-movie {
+    margin: 30px 0 100px 0;
+}
+
+
+/*ーーーーーーーーーーー*/
+/*kodawari*/
+/*ーーーーーーーーーーー*/
+h3 {
+    width: 100%;
+    font-size: 24px;
+}
+
+/*ーーーーーーーーーーー*/
+/*image_box*/
+/*ーーーーーーーーーーー*/
+.image_box {
+    display: flex;
+    margin: 64px 0px 0px 0px;
+    background-color: lightgray;
+    height: 398px;
+}
+
+.image_box_image {
+    width: 50%;
+}
+
+.image_box_text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+
+}
+
+.image_box_image img {
+    width: 100%;
+}
+
+.image_box_text div {
+    width: 80%;
+}
+
+.image_box_text p {
+    text-align: center;
+    font-weight: bold;
+}
+
+/*ーーーーーーーーーーー*/
+/*tare-info*/
+/*ーーーーーーーーーーー*/
+.knowledge_box {
+    display: flex;
+    background-color: lightgray;
+    width: auto;
+    height: 344px;
+}
+
+.knowledge_box_image {
+    width: 50%;
+    margin-right: auto;
+
+}
+
+.knowledge_box_text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.knowledge_box_text p {
+    text-align: center;
+    width: 400px;
+    font-weight: bold;
+
+}
+
+/*ーーーーーーーーーーー*/
+/*Korea-info*/
+/*ーーーーーーーーーーー*/
+.Korea_box {
+    display: flex;
+    margin: 0px 0px 0px 0px;
+    background-color: lightgray;
+    height: 374px;
+}
+
+.Korea_box_image {
+    width: 50%;
+}
+
+.Korea_box_text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+
+}
+
+.Korea_box_image img {
+    width: 100%;
+}
+
+.Korea_box_text div {
+    width: 80%;
+}
+
+.Korea_box_text p {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+/*ーーーーーーーーーーー*/
+/*shop-info*/
+/*ーーーーーーーーーーー*/
+
+
+h4 {
+    font-size: 24px;
+    width: 100%;
+    margin: 80px 0px 30px 0px
+}
+
+.shop_03 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop_honten_img {
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 226px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #000;
+}
+
+.shop_honten_img {
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.shop_honten_img:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
+
+
+.shop_chofu_img {
+    margin: 5px 0px 0px 0px;
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 226px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #000;
+}
+
+.shop_chofu_img {
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.shop_chofu_img:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
+.shop_ayaragi_img {
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 226px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #000;
+}
+
+.shop_ayaragi_img {
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.shop_ayaragi_img:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
+
+.shop_06 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 100px 0;
+}
+
+.shop_kokura_img {
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 226px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #000;
+}
+
+.shop_kokura_img {
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.shop_kokura_img:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
+.shop_jang_img {
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 226px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #000;
+}
+
+.shop_jang_img {
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.shop_jang_img:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
+.shop_meat_img {
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 226px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #000;
+}
+
+.shop_meat_img {
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.shop_meat_img:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
+/*ーーーーーーーーーーー*/
+/*otoriyose*/
+/*ーーーーーーーーーーー*/
+h5 {
+    font-size: 24px;
+    width: 100%;
+}
+
+.takeout-image {
+    margin: 0 0 100px 0;
+}
+
+.takeout-image {
+
+    overflow: hidden;
+}
+
+.takeout-image img {
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.takeout-image:hover img {
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
+
+
+
+.tell {
+    line-height: 150%
+}
+
+.tell_text {
+    margin: 0 0 100px 0;
+}
+
+.final_image {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+/*ーーーーーーーーーーー*/
+/*お問い合わせ*/
+/*ーーーーーーーーーーー*/
+
+h6 {
+    font-size: 24px;
+    width: 100%;
+    margin: 0px 150px 10px 0px;
+}
+
+.tell_text {
+    border: 2px solid #aaa;
+    text-align: center;
+    padding: 2em;
+    width: 300px;
+    margin: 0px 0px 80px 295px;
+}
+
+/*ーーーーーーーーーーー*/
+/*footer*/
+/*ーーーーーーーーーーー*/
+.footer-box {
+    height: 100px;
+    background-color: black;
+    color: white;
+}
